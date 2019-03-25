@@ -18,13 +18,6 @@
 		color: White;
 	}
 
-	body {
-		background: url("/images/background.png");
-		height: auto;
-		background-position: center;
-		background-repeat: repeat;
-		background-size: 2500px;
-	}
 /*test*/
 * {
   box-sizing: border-box;
