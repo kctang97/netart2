@@ -18,6 +18,11 @@
 		color: White;
 	}
 
+	h4 {
+		font-family: 'Satisfy', cursive;
+		color: White;
+	}
+
 /*test*/
 * {
   box-sizing: border-box;
@@ -36,6 +41,7 @@ body {
 	margin: auto;
   padding: 5px;
 	width: 20%;
+	height: 15%;
 	text-align: center;
 }
 
@@ -51,19 +57,22 @@ body {
 	border-color: #0DE0FF;
   float: right;
 	margin-top: 1%;
-	margin-right: 30%;
+	margin-right: 15%;
   width: 40%;
+	height: 100%;
 }
 
 /* Right column */
 .rightcolumn {
 	background-color: #0271E8;
+	background-position: left;
 	border-style: groove ridge inset;
 	border-width: 15px;
 	border-color: #0DE0FF;
   float: left;
-	margin-left: 12%;
+	margin-left: 13%;
   width: 15%;
+	height: 50%;
 }
 
 /* Fake image */
