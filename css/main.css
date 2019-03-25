@@ -1,70 +1,139 @@
-/* Ref:  http://www.w3schools.com/css/css_syntax.asp */
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
 	body, html{
 		height: 100%;
 		wideth: 100%;
 	}
 
 	body { /* General style rules for the body section */
-	text-align: center;
-	font-size: 20px;
+		text-align: center;
+		font-size: 20px;
+	}
+
+	audio {
+		display: none;
 	}
 
 	h1 { /* Matches elements with h3 tag */
-	color: yellow;
+		font-family: 'Satisfy', cursive;
+		color: White;
 	}
 
-
-#div1 { /* Matches element with id=SimpleDiv */
-	background-color: gray;
-	border-style: solid groove;
-  border-width: 10px;
-	border-color: green;
-	margin-left: 6px;
-	margin-right: 6px;
-}
-
-#div2 {
-	background-color: #CC1A54;
-	border-style: solid groove;
-	border-width: 10px;
-	border-color: green;
-	margin: 5%;
-	padding: 5px;
-	float: left;
-	width: 21%;
-	height: 45%;
+	body {
+		background: url("/images/background.png");
+		height: auto;
+		background-position: center;
+		background-repeat: repeat;
+		background-size: 2500px;
 	}
-
-#div3 {
-	background-color: #F1FF47;
-	border-style: solid groove;
-	border-width: 10px;
-	border-color: green;
-	margin: 5%;
-	padding: 5px;
-	float: right;
-	width: 21%;
-	height: 45%;
+/*test*/
+* {
+  box-sizing: border-box;
 }
 
-#div5 {
-	background-color: orange;
-	border-style: solid groove;
-	border-width: 10px;
-	border-color: green;
-	margin: 5%;
-	padding: 5px;
-	float: right;
-	width: 21%;
-	height: 45%;
+body {
+  padding: 10px;
 }
 
-#div4 {
-	background-color: #D307FF;
-	border-style: solid groove;
-	border-width: 10px;
-	border-color: green;
-	margin: 5%;
-	padding: 6px;
-	clear: both;
+/* Header/Blog Title */
+.header {
+	background-color: #0271E8;
+	border-style: groove ridge inset;
+	border-width: 20px;
+	border-color: #0DE0FF;
+	margin: auto;
+  padding: 5px;
+	width: 20%;
+	text-align: center;
+}
+
+.header h1 {
+  font-size: 30px;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+	background-color: #0271E8;
+	border-style: groove ridge inset;
+	border-width: 15px;
+	border-color: #0DE0FF;
+  float: right;
+	margin-top: 1%;
+	margin-right: 30%;
+  width: 40%;
+}
+
+/* Right column */
+.rightcolumn {
+	background-color: #0271E8;
+	border-style: groove ridge inset;
+	border-width: 15px;
+	border-color: #0DE0FF;
+  float: left;
+	margin-left: 12%;
+  width: 15%;
+}
+
+/* Fake image */
+.fakeimg {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  float: left;
+	margin-left: 30%;
+  text-align: center;
+}
+
+/*test*/
+div{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-direction: alternate;
+  /* Standard syntax */
+  animation-name: example;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-delay: 2s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}
 }
